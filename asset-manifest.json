@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/react_test_review/static/css/main.97cc2368.css",
-    "main.js": "/react_test_review/static/js/main.0587f633.js",
+    "main.css": "/react_test_review/static/css/main.f9f85ed3.css",
+    "main.js": "/react_test_review/static/js/main.af4a9c1d.js",
     "static/js/787.b341ccea.chunk.js": "/react_test_review/static/js/787.b341ccea.chunk.js",
     "static/media/Img_bg1.jpg": "/react_test_review/static/media/Img_bg1.c997180c791c8e8bb7b9.jpg",
     "static/media/Img_bg2.jpg": "/react_test_review/static/media/Img_bg2.7203d7b0326cc736430e.jpg",
     "static/media/Img_bg3.jpg": "/react_test_review/static/media/Img_bg3.b6524bf8ae147efd554c.jpg",
     "index.html": "/react_test_review/index.html",
-    "static/media/heart.svg": "/react_test_review/static/media/heart.088eed7a8fe0b6c22895.svg",
-    "main.97cc2368.css.map": "/react_test_review/static/css/main.97cc2368.css.map",
-    "main.0587f633.js.map": "/react_test_review/static/js/main.0587f633.js.map",
+    "main.f9f85ed3.css.map": "/react_test_review/static/css/main.f9f85ed3.css.map",
+    "main.af4a9c1d.js.map": "/react_test_review/static/js/main.af4a9c1d.js.map",
     "787.b341ccea.chunk.js.map": "/react_test_review/static/js/787.b341ccea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97cc2368.css",
-    "static/js/main.0587f633.js"
+    "static/css/main.f9f85ed3.css",
+    "static/js/main.af4a9c1d.js"
   ]
 }
