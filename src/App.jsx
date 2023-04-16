@@ -8,6 +8,7 @@ import Header from './pages/Header';
 import Main from './pages/Main';
 import Footer from './pages/Footer';
 import Shop from './pages/Shop';
+import Detail from './pages/Detail';
 
 function App() {
   let [data] = useState(productData);
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main data={data} />}></Route>
         <Route path="/Shop" element={<Shop data={data} />}></Route>
+        <Route path="/Detail/:id" element={<Detail data={data} />}></Route>
       </Routes>
 
       <Footer />

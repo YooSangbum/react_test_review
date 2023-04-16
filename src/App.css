@@ -115,16 +115,19 @@ a {
   border-radius: 6px;
   color: #a18a68;
 }
+
+/* ProductCard 영역 */
 .list_wrap {
   width: 100%;
   display: flex;
-
   flex-wrap: wrap;
 }
 .list {
   width: calc(100% / 3 - 0.5rem);
   margin-bottom: 1rem;
   margin-right: 0.75rem;
+  cursor: pointer;
+  position: relative;
 }
 .list:nth-of-type(3n) {
   margin-right: 0;
@@ -137,21 +140,31 @@ a {
   padding-top: 100%;
   position: relative;
 }
-.img_con .discount {
+.img_con .discount,
+.img_con .category {
   position: absolute;
-  top: 10px;
+  top: 40px;
   left: 10px;
+  width: 46px;
   z-index: 1;
   padding: 0.3rem 0.8rem;
   background-color: #a18a68;
   color: #fff;
   border-radius: 6px;
   font-size: 0.7rem;
+  text-align: center;
+}
+.img_con .category {
+  top: 10px;
+  left: 10px;
+  background-color: antiquewhite;
+  color: #a18a68;
 }
 .img_con img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 6px;
 }
 .img_con a {
@@ -160,7 +173,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.3rem 0;
+  padding: 1rem 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
   font-size: 0.7rem;
@@ -179,6 +192,14 @@ a {
   font-size: 0.9rem;
   color: #a18a68;
   padding-top: 0.5rem;
+}
+.list > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
 }
 
 /* Footer 영역 */
@@ -251,13 +272,154 @@ a {
 .AllList .btns button {
   padding: 0.5rem 0;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
   border-radius: 6px;
   outline: none;
   margin-bottom: 0.5rem;
   background-color: #a18a68;
+  cursor: pointer;
 }
 .AllList > .list_wrap {
   width: calc(100% - 20% - 1rem);
+}
+
+/* Detail 영역 */
+/* ProductInfo */
+.detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.detail_img {
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 30%;
+  width: calc(100% - 60%);
+}
+.detail_discount {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+  background-color: #a18a68;
+  color: #d8d8d8;
+  padding: 0.3rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+.detail_img > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+}
+.detailCon {
+  width: calc(100% - 40% - 2rem);
+  align-self: center;
+}
+.detail_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.detail_price {
+  font-size: 1rem;
+  color: #a18a68;
+  padding: 1rem 0;
+}
+.detail_contents {
+  font-size: 0.9rem;
+  padding: 1.5rem 0;
+}
+.cb_wrap {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+.countBtn {
+  background-color: #70707020;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.count {
+  padding: 0 1rem;
+}
+.plus,
+.minus {
+  cursor: pointer;
+  padding: 0 0.3rem;
+}
+.addtocart {
+  border: 1px solid black;
+  border-radius: 4px;
+  outline: none;
+  padding: 0.5rem 7rem;
+  margin-left: 1rem;
+  background-color: transparent;
+}
+.detailIcon {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.like {
+  position: relative;
+  color: #707070;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+  background-image: url(/public/img/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1rem;
+  height: 1rem;
+}
+.like::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #707070;
+  right: -60%;
+  top: 0;
+}
+.like > img {
+  width: 100px;
+  height: 100px;
+}
+.sns {
+  margin-left: 1rem;
+}
+.sns > * {
+  padding: 0.5rem;
+  color: #707070;
+  font-weight: 0.8rem;
+}
+.detailNum,
+.detailCate {
+  color: #707070;
+  padding: 0.2rem 0;
+  font-size: 0.7rem;
+}
+
+/* EctInfo 영역 */
+.nav-link {
+  color: #707070;
+}
+
+/* Similar 영역 */
+.similar {
+  margin-top: 3rem;
+}
+.similarP {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2rem 0 1rem;
+}
+.similar > .newlist .list {
+  width: 100%;
 }
