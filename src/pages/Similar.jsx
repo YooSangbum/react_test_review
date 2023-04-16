@@ -20,7 +20,7 @@ function Similar(props) {
       >
         {data.map((a, i) => {
           return (
-            <SwiperSlide key={a.id}>
+            <SwiperSlide key={i}>
               <ListCard data={a} />
             </SwiperSlide>
           );
